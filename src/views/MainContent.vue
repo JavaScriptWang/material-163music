@@ -29,6 +29,7 @@ const data = reactive({
 })
 
 onBeforeMount(() => {
+    console.log('#EC4141');
     //console.log('2.组件挂载页面之前执行----onBeforeMount')
 })
 onMounted(() => {
@@ -44,4 +45,3 @@ defineExpose({
 
 
 </script>
-<style scoped lang='less'></style>

@@ -1,15 +1,19 @@
 import { createApp } from "vue"
-import "./style.css"
+import { createPinia } from "pinia"
+import router from "./router"
+
 import App from "./App.vue"
 const app = createApp(App)
 
-import router from "./router"
+app.use(createPinia())
 app.use(router)
 
 import BalmUI from "balm-ui"
 import BalmUIPlus from "balm-ui-plus"
 import "balm-ui-css"
-app.use(BalmUI)
+import "./assets/main.css"
+
+app.use(BalmUI, {})
 app.use(BalmUIPlus)
 
 app.mount("#app")

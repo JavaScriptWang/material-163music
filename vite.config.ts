@@ -26,4 +26,12 @@ export default defineConfig({
       dirs: path.resolve(__dirname, "src/directives"),
     },
   },
+  css: {
+    /* CSS 预处理器 */
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "src/assets/styles/global.scss";',
+      },
+    },
+  },
 });

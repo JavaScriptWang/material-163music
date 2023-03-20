@@ -1,27 +1,22 @@
 <template>
-  <h1>{{ msg }}</h1>
-
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <br>
-    <span>{{ str }}</span>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+  <div class="demo-content">
+    <!-- Drawer -->
+    <ui-drawer viewport-height>
+      <ui-drawer-header>
+        <ui-drawer-title>发现音乐</ui-drawer-title>
+      </ui-drawer-header>
+      <ui-drawer-content>
+        <ui-nav>
+          <ui-nav-item href="#" @click="goToHome">Home
+          </ui-nav-item>
+          <ui-nav-item href="#" @click="goToPosts">Les posts !
+          </ui-nav-item>
+          <ui-nav-item href="#" @click="goToAbout">A propos
+          </ui-nav-item>
+        </ui-nav>
+      </ui-drawer-content>
+    </ui-drawer>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
-    starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
 <script setup lang="ts">
@@ -33,8 +28,4 @@ const count = ref(0)
 const str = ref('test')
 </script>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
+<style scoped></style>
