@@ -1,27 +1,6 @@
 {
+  "extends": "@quasar/app-vite/tsconfig-preset",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "balm-ui-plus": ["node_modules/balm-ui/dist/balm-ui-plus.d.ts"],
-      "@/*": ["./src/*"],
-      "stores*": ["./src/stores*"],
-      "components*": ["./src/components*"],
-      "modules*": ["./src/modules*"],
-      "utils*": ["./src/utils*"]
-    },
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "noEmit": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+    "baseUrl": "."
+  }
 }
