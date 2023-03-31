@@ -18,7 +18,7 @@
 
     <q-drawer class="myDrawer" show-if-above v-model="leftDrawerOpen" side="left" bordered>
       <q-list padding>
-        <q-item clickable v-ripple>
+        <q-item clickable v-ripple to="/discovery">
           <q-item-section avatar>
             <q-icon name="inbox" />
           </q-item-section>

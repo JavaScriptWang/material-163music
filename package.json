@@ -2,7 +2,7 @@
   "name": "quasar-netease-cloudmusic",
   "version": "0.0.1",
   "description": "个人网易云音乐项目 /w Quasar",
-  "productName": "欢迎来到质感云音乐",
+  "productName": "欢迎来到quasar云音乐",
   "author": "JavaScriptWang <wjs924504518@gmail.com>",
   "private": true,
   "scripts": {
@@ -18,8 +18,10 @@
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.33",
     "quasar": "^2.6.0",
+    "swiper": "^8.4.7",
     "vue": "3.2",
     "vue-router": "^4.0.0",
+    "vue3-carousel": "^0.2.14",
     "xgplayer": "^2.32.2"
   },
   "devDependencies": {
